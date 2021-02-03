@@ -24,7 +24,7 @@ const City = (props) => {
 				<div className="city__body">
 					<div className="city__body__left">
 						<div className="city__body__left__time">
-							{props.time}
+							UTC {props.time}
 						</div>
 						<div className="city__body__left__temperture">
 							{props.cur_temp}°

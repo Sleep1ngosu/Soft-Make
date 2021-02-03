@@ -16,6 +16,7 @@ const Main = (props) => {
 	const onSubmit = async (e) => {
 		e.preventDefault()
 		await props.requestLocation(data)
+		setData('')
 	}
 
 	const cityList = props.weather.locations.map((e, i) => {

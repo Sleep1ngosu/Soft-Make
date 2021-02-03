@@ -1,0 +1,9 @@
+.blocker {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(29, 29, 29, 0.9);
+	z-index: 2;
+}

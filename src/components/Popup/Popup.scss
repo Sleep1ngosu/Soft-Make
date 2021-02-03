@@ -1,0 +1,61 @@
+.popup {
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 50rem;
+		height: 15rem;
+		background-color: #fff;
+		border-radius: 2rem;
+		z-index: 3;
+	}
+
+	&__message {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50%;
+		width: 100%;
+		font-size: 2.4rem;
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex: 1 1 auto;
+
+		&__accept {
+			background-color: rgb(0, 255, 0);
+			transition: 0.2s;
+
+			&:hover {
+				transition: 0.2s;
+				background-color: rgb(0, 189, 0);
+			}
+		}
+
+		&__decline {
+			background-color: rgb(255, 0, 0);
+			transition: 0.2s;
+
+			&:hover {
+				transition: 0.2s;
+				background: rgb(189, 0, 0);
+			}
+		}
+	}
+
+	&__button {
+		width: 15rem;
+		height: 4rem;
+		border: none;
+		border-radius: 2rem;
+		cursor: pointer;
+		font-size: 1.7rem;
+		outline: none;
+	}
+}
