@@ -1,0 +1,26 @@
+.main__header__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-family: 'Quicksand', sans-serif;
+	outline: none;
+	border: none;
+	border-radius: 1.5rem;
+	background-color: #4083b9;
+	width: 8rem;
+	height: 4.5rem;
+	margin-left: 2rem;
+	color: rgb(221, 221, 221);
+	cursor: pointer;
+	transition: 0.2s;
+
+	&:hover {
+		transition: 0.2s;
+		background-color: #2a6494;
+	}
+
+	&__icon {
+		width: 2rem;
+	}
+}
