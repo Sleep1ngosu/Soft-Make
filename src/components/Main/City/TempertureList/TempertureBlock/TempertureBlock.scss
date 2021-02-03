@@ -1,0 +1,24 @@
+.city__tempertureBlock {
+	font-size: 1.4rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	&__daytime {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		letter-spacing: 0.1rem;
+	}
+
+	&__temperture {
+		display: flex;
+		// justify-content: center;
+		padding-left: 1rem;
+		align-items: center;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		color: rgb(68, 153, 202);
+	}
+}

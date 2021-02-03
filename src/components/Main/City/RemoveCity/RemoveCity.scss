@@ -1,0 +1,20 @@
+.city__removeCity {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 2rem;
+	top: 50%;
+	transform: translateY(-50%);
+
+	&__icon {
+		width: 2rem;
+		cursor: pointer;
+		transition: 0.3s;
+
+		&:hover {
+			width: 2.5rem;
+			transition: 0.3s;
+		}
+	}
+}
