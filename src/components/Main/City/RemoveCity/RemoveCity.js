@@ -1,10 +1,16 @@
 import React from 'react'
 import './RemoveCity.scss'
+import { connect } from 'react-redux'
 import remove from '../../../../assets/icons/remove.png'
+import { removeLocation } from '../../../../redux/actions/weather'
 
-const RemoveCity = () => {
+const RemoveCity = (props) => {
+	const onRemove = (id) => {
+		props.removeLocation(id)
+	}
+
 	return (
-		<div className="city__removeCity">
+		<div onClick={() => onRemove(props.id)} className="city__removeCity">
 			<img
 				className="city__removeCity__icon"
 				src={remove}
@@ -14,4 +20,4 @@ const RemoveCity = () => {
 	)
 }
 
-export default RemoveCity
+export default connect(null, { removeLocation })(RemoveCity)
